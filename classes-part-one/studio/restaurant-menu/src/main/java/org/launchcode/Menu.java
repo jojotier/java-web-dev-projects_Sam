@@ -7,9 +7,9 @@ public class Menu {
     private Date lastUpdated;
     private ArrayList<MenuItem> items;
 
-    public Menu(Date d, ArrayList<MenuItem> i) {
-        this.lastUpdated = d;
-        this.items = i;
+    public Menu(Date dateUpdated, ArrayList<MenuItem> iIndex) {
+        this.lastUpdated = dateUpdated;
+        this.items = iIndex;
     }
 
     public void setLastUpdated(Date lastUpdated) {

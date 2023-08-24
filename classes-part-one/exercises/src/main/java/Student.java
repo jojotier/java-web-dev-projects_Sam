@@ -8,31 +8,35 @@ public class Student {
 
         // Drop your getters and setters below for the Student class.
         // To instantiate the Student class, add your code to the main in the file, SchoolPractice.
-        public String getName(){
-                return name;
-        }
-        public void setName(String name){
+        public void setName(String name) {
                 this.name = name;
         }
-        public void setStudentId(int studentId){
+
+        public void setStudentId(int studentId) {
                 this.studentId = studentId;
         }
-        private void setNumberOfCredits(int numberOfCredits){
-                this.numberOfCredits = numberOfCredits;
-        }
-        public void setGpa(double gpa){
+
+        public void setGpa(double gpa) {
                 this.gpa = gpa;
         }
-        public String getName(String name){
+
+        private void setNumberOfCredits(int numberOfCredits) {
+                this.numberOfCredits = numberOfCredits;
+        }
+
+        public String getName() {
                 return name;
         }
-        public int getStudentId(int studentId){
+
+        public int getStudentId() {
                 return studentId;
         }
-        public int getNumberOfCredits(int numberOfCredits){
+
+        public int getNumberOfCredits() {
                 return numberOfCredits;
         }
-        public double getGpa(double gpa){
+
+        public double getGpa() {
                 return gpa;
         }
 
