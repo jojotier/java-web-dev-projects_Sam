@@ -31,10 +31,6 @@ public class BalancedBrackets {
                 }
             }
         }
-        if (brackets == 0 ){
-            return true;
-        } else {
-            return false;
-        }
+        return brackets == 0;
     }
 }
