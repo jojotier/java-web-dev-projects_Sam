@@ -1,47 +1,27 @@
 import java.util.ArrayList;
 public abstract class Question {
     private String questionText;
-    private ArrayList<String> possibleAnswers;
+    private int pointValue;
 
-    private ArrayList<String> correctAnswers;
-
-    public double gradingQuiz(){
-        return 0;
-    }
-
-    public void printQuestions(){
-
-    }
-
-    public void printAnswers(){
-
-    }
-
-    private void checkAnswers(){
-
-    }
-
-    public String getQuestionText() {
-        return questionText;
-    }
-
-    public void setQuestionText(String questionText) {
+    public Question(int pointValue, String questionText){
+        this.pointValue = pointValue;
         this.questionText = questionText;
     }
 
-    public ArrayList<String> getPossibleAnswers() {
-        return possibleAnswers;
+
+    public void printQuestions(){
+        System.out.println(questionText);
     }
 
-    public void setPossibleAnswers(ArrayList<String> possibleAnswers) {
-        this.possibleAnswers = possibleAnswers;
+    public abstract void printAnswers();
+
+    public abstract int getAnswersFromUsers();
+
+    public int getPointValue() {
+        return pointValue;
     }
 
-    public ArrayList<String> getCorrectAnswers() {
-        return correctAnswers;
-    }
-
-    public void setCorrectAnswers(ArrayList<String> correctAnswers) {
-        this.correctAnswers = correctAnswers;
+    public void setPointValue(int pointValue) {
+        this.pointValue = pointValue;
     }
 }
